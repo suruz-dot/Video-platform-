@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DEEN SHOP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>DEEN SHOP</h1>
+  <input type="text" placeholder="Search product...">
+</header>
+
+<section class="products">
+  <div class="product">
+    <h3>Mobile Phone</h3>
+    <p>Price: 12000 Tk</p>
+    <button onclick="addToCart('Mobile Phone',12000)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Headphone</h3>
+    <p>Price: 1500 Tk</p>
+    <button onclick="addToCart('Headphone',1500)">Add to Cart</button>
+  </div>
+</section>
+
+<section class="cart">
+  <h2>Cart</h2>
+  <ul id="cartList"></ul>
+  <h3>Total: <span id="total">0</span> Tk</h3>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
